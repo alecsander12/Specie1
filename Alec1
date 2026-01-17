@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Species Alimentos - Nossos Produtos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #d4a373; /* Tom bronze/dourado das embalagens */
+            --bg: #f8f5f0; /* Fundo bege claro das fotos */
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            color: var(--primary);
+        }
+
+        /* Estilo das Embalagens */
+        .packaging-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .packaging-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent);
+        }
+
+        .packaging-card h3 {
+            color: var(--accent);
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        /* Listas de Produtos */
+        .products-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .product-list h2 {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            font-size: 1.3rem;
+            color: var(--primary);
+        }
+
+        .product-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-list li::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .products-section { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SPECIES ALIMENTOS</h1>
+        <p>Qualidade e Sabor em cada detalhe</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Como pensamos e oferecemos nossos produtos e embalagens</h2>
+
+        <div class="packaging-grid">
+            <div class="packaging-card">
+                <h3>Embalagem de Vidro com Moedora</h3>
+                <p>Permite moer na hora, garantindo o máximo de frescor e aroma para pimentas, sal do Himalaia e sementes.</p>
+            </div>
+            <div class="packaging-card">
+                <h3>Embalagem de Vidro com Tampa</h3>
+                <p>Ideal para conservação prolongada de temperos em pó e ervas secas, mantendo as propriedades originais.</p>
+            </div>
+            <div class="packaging-card">
+                <h3>Sachês com Zip Lock</h3>
+                <p>Praticidade e economia. O sistema abre-e-fecha mantém o produto protegido após o primeiro uso.</p>
+            </div>
+        </div>
+
+        <div class="products-section">
+            <div class="product-list">
+                <h2>Produtos com Tampa Dosadora</h2>
+                <ul>
+                    <li>Alecrim</li>
+                    <li>Ana Maria</li>
+                    <li>Arroz à Grega</li>
+                    <li>Cúrcuma (Açafrão-da-terra)</li>
+                    <li>Ervas Finas</li>
+                    <li>Lemon Pepper</li>
+                    <li>Pimenta Rosa</li>
+                    <li>Tempero Gaúcho</li>
+                    <li>Tempero Mineiro</li>
+                    <li>Tomilho</li>
+                </ul>
+            </div>
+
+            <div class="product-list">
+                <h2>Sachês com Zip Lock</h2>
+                <ul>
+                    <li>Bicarbonato de Sódio</li>
+                    <li>Canela em Pó / Pau</li>
+                    <li>Colorau (Urucum)</li>
+                    <li>Curry</li>
+                    <li>Erva-Doce</li>
+                    <li>Noz-Moscada</li>
+                    <li>Orégano</li>
+                    <li>Pimenta-do-reino</li>
+                    <li>Tempero Vinagrete</li>
+                    <li>Chimichurri</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Species Alimentos - www.speciesalimentos.com.br</p>
+    </footer>
+
+</body>
+</html>
